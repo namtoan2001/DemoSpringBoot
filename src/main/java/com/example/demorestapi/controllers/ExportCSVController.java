@@ -2,6 +2,7 @@ package com.example.demorestapi.controllers;
 
 import com.example.demorestapi.services.ExportCSVService;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +11,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 @RestController
+@CrossOrigin(origins = "https://demospringboot-production-7e99.up.railway.app")
 @RequestMapping("/api")
 public class ExportCSVController {
     private final ExportCSVService exportCSVService;

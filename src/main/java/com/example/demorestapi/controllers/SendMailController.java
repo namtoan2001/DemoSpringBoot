@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "https://demospringboot-production-7e99.up.railway.app")
 @RequestMapping("/api/sendmail")
 public class SendMailController {
     private final SendMailService sendMailService;
