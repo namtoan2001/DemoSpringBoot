@@ -11,7 +11,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 @RestController
-@CrossOrigin(origins = "https://demospringboot-production-7e99.up.railway.app")
+@CrossOrigin(origins = {"https://demospringboot-production-7e99.up.railway.app","http://demospringboot-production-7e99.up.railway.app"}, allowCredentials = "true")
 @RequestMapping("/api")
 public class ExportCSVController {
     private final ExportCSVService exportCSVService;
