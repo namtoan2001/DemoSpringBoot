@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 @RestController
-@CrossOrigin(origins = {"https://demospringboot-production-7e99.up.railway.app","http://demospringboot-production-7e99.up.railway.app"}, allowCredentials = "true")
+@CrossOrigin(origins = {"https://demospringboot-production-7e99.up.railway.app", "http://demospringboot-production-7e99.up.railway.app"}, allowCredentials = "true")
 @RequestMapping("/api/user")
 public class UserController {
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
