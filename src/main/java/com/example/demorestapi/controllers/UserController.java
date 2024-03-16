@@ -5,6 +5,7 @@ import com.example.demorestapi.viewModels.CreateUserRequest;
 import com.example.demorestapi.viewModels.UpdateUserRequest;
 import com.example.demorestapi.viewModels.UserLoginRequest;
 import com.example.demorestapi.viewModels.UserVM;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ import java.util.concurrent.CompletableFuture;
 
 @RestController
 @CrossOrigin(origins = {"https://demospringboot-production-7e99.up.railway.app", "http://demospringboot-production-7e99.up.railway.app"}, allowCredentials = "true")
+@SecurityRequirement(name = "Authorization")
 @RequestMapping("/api/user")
 public class UserController {
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);

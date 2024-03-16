@@ -1,6 +1,7 @@
 package com.example.demorestapi.controllers;
 
 import com.example.demorestapi.services.SendMailService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.mail.MessagingException;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,6 +9,7 @@ import java.io.IOException;
 
 @RestController
 @CrossOrigin(origins = {"https://demospringboot-production-7e99.up.railway.app","http://demospringboot-production-7e99.up.railway.app"}, allowCredentials = "true")
+@SecurityRequirement(name = "Authorization")
 @RequestMapping("/api/sendmail")
 public class SendMailController {
     private final SendMailService sendMailService;

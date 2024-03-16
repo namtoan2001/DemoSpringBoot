@@ -1,6 +1,7 @@
 package com.example.demorestapi.controllers;
 
 import com.example.demorestapi.services.ExportCSVService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +13,7 @@ import java.io.IOException;
 
 @RestController
 @CrossOrigin(origins = {"https://demospringboot-production-7e99.up.railway.app","http://demospringboot-production-7e99.up.railway.app"}, allowCredentials = "true")
+@SecurityRequirement(name = "Authorization")
 @RequestMapping("/api")
 public class ExportCSVController {
     private final ExportCSVService exportCSVService;
