@@ -10,10 +10,10 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import java.util.Date;
 
 @Component
-public class RequestCountInterceptors implements HandlerInterceptor {
+public class LogCountInterceptors implements HandlerInterceptor {
     private final LogCountRepository logCountRepository;
 
-    public RequestCountInterceptors(LogCountRepository logCountRepository) {
+    public LogCountInterceptors(LogCountRepository logCountRepository) {
         this.logCountRepository = logCountRepository;
     }
 
