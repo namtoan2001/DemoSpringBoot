@@ -5,11 +5,3 @@
 ## Truy Cập Demo
 
 Bạn có thể truy cập vào trang Swagger để thử nghiệm các API của dự án tại đường dẫn sau: [Swagger Demo](https://demospringboot-production-7e99.up.railway.app/swagger-ui/index.html)
-
-## PostgreSQL Database
-
-Dưới đây là thông tin kết nối tới PostgreSQL database:
-
-- Hostname: rain.db.elephantsql.com
-- Username: dnhrpfbr
-- Password: UyLSZ4wriYekZ_VSgTNik20kq5DKHtjA
